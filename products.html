@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rijaya Comercial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/Rijaja.png" width="125px"></a>
+              </div>
+              <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="">Acerca de</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="account.html">Cuenta</a></li>
+                </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+       </div>
+<!----------------- title -------------->
+<div class="small-container">
+   <div class="row row-2">
+       <h2>Todos los productos</h2>
+       <select>
+           <option>Listado predeterminado</option>
+           <option>Lista por precio</option>
+           <option>Lista por popularidad</option>
+           <option>Lista por calificación</option>
+           <option>Lista por venta</option>
+       </select>
+   </div>
+    
+             
+           <div class="row">
+               <div class="col-4">
+                   
+                   <a href="product-details.html"><img src="Productos/Muebles de almacenaje/GAVETA_1_EUROPLAST_AZUL.png"></a>
+                   <h4><a href="product-details.html">Gaveta 1 europlast</a></h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>$50.00</p>
+               </div> 
+               <div class="col-4">
+                   <img src="Productos/Muebles de almacenaje/ESTANTE_AEROSOLES.png">
+                   <h4>Estantes aerosoles</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>$75.00</p>
+               </div> 
+               <div class="col-4">
+                   <img src="Productos/Muebles de almacenaje/CAJA_CANADA_CON_TAPA.png">
+                   <h4>Caja canadá con tapa</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>$45.00</p>
+               </div> 
+                <div class="col-4">
+                   <img src="Productos/Muebles de almacenaje/CAJA_BAMBA_O.png">
+                   <h4>Caja bamba'o</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>$55.00</p>
+               </div> 
+           </div>
+                
+           <div class="page-btn">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>&#8594;</span>
+          </div>
+</div>
+    
+<!----------Footer---------------> 
+
+<div class="footer-section social-icons">
+    <h3>Síguenos</h3>
+    <a href="https://wa.me/2223890374" target="_blank"><img src="images/Whats.gif"></a>
+    <a href="https://www.instagram.com/rijayamx?igsh=MTM4ZDB3d2xzajB1aA==" target="_blank"><img
+            src="images/Insta.gif"></a>
+    <a href="https://www.facebook.com/rijayacomercial" target="_blank"><img src="images/Face.gif"></a>
+
+
+<div class="footer-section address">
+    <p>Carr. Fed. Puebla - Tehuacán Km 10.5 • Col. Chachapa, Puebla. C.P. 72980 • Amozoc, Puebla.</p>
+    <div class="contact-info">
+        <div class="contact-item">
+            <img src="images/Timb.gif"><span>222 286 2952</span>
+        </div>
+        <div class="contact-item">
+            <img src="images/Corre.gif"><span>soporte@rijayacomercial.com</span>
+        </div>
+    </div>
+</div>
+
+<div class="footer-section logo">
+    <img src="images/Rijaja.png" width="105px" height="65px">
+</div>
+
+<div class="footer-section copyright">
+    <p>Copyright © | Rijaya Comercial</p>
+</div>
+</div>
+
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+</script>
+
+
+
+</body>
+</html>
+
